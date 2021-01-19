@@ -11,7 +11,7 @@ To install, do something similar to this:
     ```
 3. Create directories on your host for the content, configuration, certificates and logs, for example:
     ```
-    $ mkdir /srv/gemini/{gmi,conf,certs,log}
+    $ mkdir /srv/gemini/{gmi/cgi-bin,conf,certs,log}
     ```
 4. Copy the executable to the directory where you keep the Dockerfile and the example ini file to your conf directory.
 5. Build the docker image:
