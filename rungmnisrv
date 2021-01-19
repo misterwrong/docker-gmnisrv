@@ -1,0 +1,3 @@
+#!/bin/sh
+/usr/bin/gmnisrv -C /usr/local/etc/gmnisrv.ini >> /var/log/gemini/out.log 2>> /var/log/gemini/err.log
+
