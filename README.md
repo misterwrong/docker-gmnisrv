@@ -20,6 +20,11 @@ To install, do something similar to this:
     ```
 6. Run the image:
     ```
-    # docker run -d --name gmnisrv --restart=always -p1965:1965 -v /srv/gemini/content:/srv/gemini -v /srv/gemini/conf:/usr/local/etc -v /srv/gemini/certs:/var/lib/gemini/certs mrwrong/gmnisrv
+    # docker run -d --name gmnisrv --restart=always -p1965:1965\
+        -v /srv/gemini/content:/srv/gemini
+        -v /srv/gemini/conf:/usr/local/etc
+        -v /srv/gemini/certs:/var/lib/gemini/certs
+        mrwrong/gmnisrv
     ```
-7. Open and forward TCP port 1965 to your host.
+7. Open and forward TCP port 1965 to your host, put a index.gmi file in your content directory, and you're done.
+
